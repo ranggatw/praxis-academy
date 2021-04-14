@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Praxis Week 1 Day 3</title>
+  </head>
+  <body>
+    <!-- Point Belajar -->
+    <div>
+      <h1 style="text-align: center">Praxis Academy</h1>
+    </div>
+    <div>
+      <h2>Point Belajar hari ini</h2>
+      <p>Tanggal : 14 April 2021</p>
+      <div>
+        <h3>Belajar Javascript Control Flow :</h3>
+        <ul>
+          <li>
+            Conditional Statement ----
+            <a
+              href="https://www.w3resource.com/javascript-exercises/javascript-conditional-statements-and-loops-exercises.php#EDITOR"
+              >tugas di sini</a
+            >
+          </li>
+          <li>
+            Looping ----
+            <a
+              href="https://www.w3resource.com/javascript-exercises/javascript-conditional-statements-and-loops-exercises.php#EDITOR"
+              >tugas di sini</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3>Belajar Vue JS :</h3>
+        <ul>
+          <li>Penggunaan v-for</li>
+          <li>Penggunaan v-if</li>
+          <li>Penggunaan v-else-if</li>
+          <li>Penggunaan v-else</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Output Belajar-->
+    <div id="app">
+      <!-- Binding data -->
+      <p style="margin-left: 25px; color: green">{{ message}}</p>
+
+      <!-- Looping dengan v-for atrribute -->
+      <ol>
+        <li v-for="kelas in bootcamp">{{kelas.kelas}}</li>
+      </ol>
+
+      <!-- Conditional Statement v-if -->
+      <p v-if="condition === 20">Kondisi jika condition valuenya 20</p>
+      <p v-else-if="condition === 40">Kondisi jika condition valuenya 40</p>
+      <p v-else="condition === 60">Kondisi jika condition valuenya 60</p>
+    </div>
+
+    <!-- Vue Js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
