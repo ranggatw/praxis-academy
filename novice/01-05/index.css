@@ -1,0 +1,22 @@
+.header-nav {
+  background-color: #0095f6;
+}
+
+.header-title {
+  /* margin: auto; */
+}
+
+.header-title h5 {
+  color: white;
+  
+}
+
+.header-nav li {
+  list-style: none;
+  padding: 10px;
+  display: inline-block;
+}
+
+.header-nav li a{
+  text-decoration: none;
+}
