@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document Object Model</title>
+</head>
+<body>
+  
+  <!-- Belajar Manipulasi DOM -->
+
+  <!-- Finding Elements -->
+  <!-- <p id="find-p">Find this Paragraph</p> -->
+
+  <!-- Changing The Document -->
+  <!-- <p>One</p>
+  <p>Two</p>
+  <p>Three</p> -->
+
+
+
+
+  <script>
+    // Finding element
+    let find = document.getElementById('find-p');
+    // console.log(find);
+
+    // Changing The Document
+    let change = document.body.getElementsByTagName("p");
+    document.body.insertBefore(change[2], change[0])
+
+
+  </script>
+</body>
+</html>
