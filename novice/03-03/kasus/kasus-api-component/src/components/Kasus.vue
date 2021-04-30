@@ -1,10 +1,11 @@
 <template>
   <div>
-    <h4>Detail Post</h4>
-    <div v-for="post in posts.slice(0, 5)" :key="post.userId + Math.random()">
-      <p>Ini id dari Post : {{ post.id }}</p>
-      <p>Ini title Post : {{ post.title }}</p>
-      <p>Ini isi dari Post : {{ post.body }}</p>
+    <h1>Detail Post :</h1>
+    <div v-for="(post, index) in posts.slice(0, 5)" :key="index">
+      <div class="card">
+        <header># {{ post.id }} Title Post : {{ post.title }}</header>
+        <p>Content : {{ post.body }}</p>
+      </div>
     </div>
   </div>
 </template>
@@ -32,3 +33,25 @@ export default {
   },
 };
 </script>
+
+<style>
+.card {
+  border: 2px solid gray;
+  border-radius: 9px;
+  margin-bottom: 10px;
+  /* padding: 8px; */
+}
+
+.card header {
+  display: block;
+  border-radius: 8px 8px 0 0;
+  background: orange;
+  padding: 3px;
+  color: white;
+  font-size: 1.2em;
+}
+
+.card p {
+  padding: 0.5em;
+}
+</style>
